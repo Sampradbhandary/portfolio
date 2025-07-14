@@ -1,110 +1,28 @@
-/* Smooth scroll on link click */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Fade-in animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Basic page styling */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #EF472A;
-  color: #333;
-  animation: fadeInUp 1s ease-out;
+	padding: 2rem;
+	font-family: -apple-system, BlinkMacSystemFont, "Arial", sans-serif;
 }
 
-/* Header + Navigation */
-header {
-  background: #222;
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  animation: fadeInUp 1.2s ease-out;
+h1 {
+	font-size: 16px;
+	margin-top: 0;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2rem;
+p {
+	color: rgb(107, 114, 128);
+	font-size: 15px;
+	margin-bottom: 10px;
+	margin-top: 5px;
 }
 
-nav {
-  margin-top: 1rem;
+.card {
+	max-width: 620px;
+	margin: 0 auto;
+	padding: 16px;
+	border: 1px solid lightgray;
+	border-radius: 16px;
 }
 
-nav a {
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+.card p:last-child {
+	margin-bottom: 0;
 }
-
-nav a:hover {
-  text-decoration: underline;
-  color: #1abc9c;
-}
-
-/* Sections */
-section {
-  padding: 2.5rem 2rem;
-  max-width: 800px;
-  margin: auto;
-  opacity: 0;
-  animation: fadeInUp 0.8s ease forwards;
-  animation-delay: 0.3s;
-}
-
-/* Delay for multiple sections */
-section:nth-of-type(2) { animation-delay: 0.5s; }
-section:nth-of-type(3) { animation-delay: 0.7s; }
-
-/* Section headers */
-h2 {
-  color: #444;
-}
-
-/* Project Cards */
-.project {
-  background: #fff;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-/* Email Button Styling */
-.email-button {
-  display: inline-block;
-  background: #222;
-  color: white;
-  padding: 10px 20px;
-  margin-top: 1rem;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.ema
